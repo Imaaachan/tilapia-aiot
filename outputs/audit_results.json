@@ -1,0 +1,31 @@
+{
+  "plateau_share | Temperature (\u00b0C)": 0.918,
+  "plateau_share | Dissolved Oxygen (mg/L)": 0.918,
+  "plateau_share | pH": 0.918,
+  "plateau_share | Turbidity (NTU)": 0.922,
+  "plateau_share | Survival Rate (%)": 0.918,
+  "linear_interp_share | oxigeno_scaled": 0.77,
+  "linear_interp_share | ph": 0.77,
+  "linear_interp_share | turbidez": 0.77,
+  "genuine_obs": 1008,
+  "genuine_share": 0.23,
+  "low_oxygen_alert_counts": {
+    "Safe": 4383
+  },
+  "health_status_identik_thermal_risk": true,
+  "aturan_thermal_high": "Temperature > 28.0 (min High=28.007, max Normal=28.000)",
+  "at_risk_per_bulan": {
+    "March": 702,
+    "February": 3
+  },
+  "oxygenation_automatic_selang_seling": true,
+  "E1_R2_DO_split_acak": 1.0,
+  "E1_R2_DO_leave_one_month_out": 0.8505,
+  "E2_health_dari_bulan_saja": {
+    "acc": 1.0,
+    "f1_at_risk": 1.0
+  },
+  "E3_R2_semua_baris_split_acak": 0.4943,
+  "E3_R2_observasi_asli_split_waktu": -0.135,
+  "E3_R2_persistence_observasi_asli": -0.9
+}

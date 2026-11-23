@@ -1,0 +1,9 @@
+kagglehub
+openpyxl
+numpy
+pandas
+scipy
+scikit-learn
+lightgbm
+matplotlib
+pyarrow

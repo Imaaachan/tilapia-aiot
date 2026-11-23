@@ -1,0 +1,119 @@
+{
+ "T_month": [
+  27.47,
+  26.5,
+  28.35,
+  27.7,
+  26.6,
+  27.45
+ ],
+ "pH_month": [
+  7.98,
+  7.34,
+  7.97,
+  7.91,
+  7.89,
+  7.88
+ ],
+ "turb_month": [
+  3.3,
+  2.79,
+  2.79,
+  3.98,
+  3.19,
+  3.71
+ ],
+ "rain_prob_month": [
+  0.1,
+  0.07,
+  0.1,
+  0.35,
+  0.55,
+  0.5
+ ],
+ "heatwave_prob_month": [
+  0.02,
+  0.03,
+  0.04,
+  0.02,
+  0.0,
+  0.0
+ ],
+ "T_diel_amp": [
+  0.8,
+  1.6
+ ],
+ "Pmax": [
+  1.3,
+  1.9
+ ],
+ "r_plankton": 0.16,
+ "r_sed": 0.07,
+ "r_fish_per_kgm3": 0.045,
+ "theta": 1.07,
+ "k_reaer": [
+  0.03,
+  0.06
+ ],
+ "pH_beta": 0.9,
+ "pH_calib_offset": 0.17,
+ "stock_density_kg_m3": [
+  1.0,
+  3.5
+ ],
+ "stock_density_noaer_kg_m3": [
+  0.6,
+  1.6
+ ],
+ "aerator_prob": 0.8,
+ "aerator_on_below": 4.0,
+ "aerator_off_above": 6.0,
+ "aerator_kla": [
+  0.25,
+  0.45
+ ],
+ "aerator_fail_prob_day": 0.006,
+ "aerator_fail_days": [
+  1,
+  4
+ ],
+ "N0": 10000,
+ "h0_month": 0.035,
+ "DO_TLM24_lab": 1.41,
+ "DO_TLM24": 0.8,
+ "DO_TLM_temp_slope": 0.15,
+ "DO_scale": 0.25,
+ "T_lethal": 39.0,
+ "T_scale": 0.8,
+ "T_opt_hi": 32.1,
+ "pH_lethal_low": 3.5,
+ "pH_ok": [
+  5.5,
+  9.0
+ ],
+ "stress_halflife_h": 72,
+ "disease_lag_h": 48,
+ "k_disease": 0.0015,
+ "noise": {
+  "T": 0.1,
+  "DO": 0.15,
+  "pH": 0.05,
+  "turb_rel": 0.05
+ },
+ "pH_drift_per_h": [
+  -0.0012,
+  0.0012
+ ],
+ "DO_fouling_per_h": [
+  -0.0015,
+  0.0
+ ],
+ "recal_every_h": 360,
+ "spike_prob": 0.002,
+ "dropout_prob": 0.01,
+ "outage_prob_day": 0.01,
+ "outage_hours": [
+  3,
+  24
+ ]
+}

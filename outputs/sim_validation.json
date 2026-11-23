@@ -1,0 +1,44 @@
+{
+ "sim_T_month": [
+  27.46,
+  27.07,
+  28.32,
+  27.74,
+  26.82,
+  27.37
+ ],
+ "ref_T_month": [
+  27.47,
+  26.5,
+  28.35,
+  27.7,
+  26.6,
+  27.45
+ ],
+ "sim_pH_month": [
+  7.94,
+  7.58,
+  7.96,
+  7.93,
+  7.87,
+  7.87
+ ],
+ "ref_pH_month": [
+  7.98,
+  7.34,
+  7.97,
+  7.91,
+  7.89,
+  7.88
+ ],
+ "sim_surv_overall_mean": 93.61,
+ "ref_surv_overall_mean": 93.89,
+ "pond_months_below_90pct": 0.078,
+ "DO_hour_min": 6,
+ "DO_hour_max": 15,
+ "DO_dawn_mean": 4.75,
+ "DO_15h_mean": 8.94,
+ "MAE_T_month": 0.157,
+ "MAE_pH_month": 0.057,
+ "MAE_sensor_DO": 0.143
+}
