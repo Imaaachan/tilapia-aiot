@@ -27,8 +27,8 @@ pengamatan lapangan.
 
 Isi: SHAP untuk LightGBM H=6/24, ablation kelompok sensor H=6/12/24, CNN 1D
 sebagai model sequence pembanding, serta uji Wilcoxon/Friedman pada hasil
-5-fold notebook 02. CNN dijalankan pada 3 fold pertama untuk membatasi waktu
-CPU; jumlah epoch dapat dikurangi untuk uji awal.
+5-fold notebook 02. CNN memakai 5 fold; bila waktu CPU melebihi 30 menit,
+turunkan menjadi 3 fold dan laporkan.
 """
 )
 
@@ -61,7 +61,7 @@ from modeling import (
 
 SEED = 0
 N_SPLITS = 5
-CNN_SPLITS = 3
+CNN_SPLITS = 5
 CNN_EPOCHS = 3
 CNN_BATCH_SIZE = 1024
 torch.set_num_threads(min(4, os.cpu_count() or 1))
@@ -377,7 +377,7 @@ Masukan tiap contoh adalah jendela 72 jam dari empat bacaan sensor, status
 aerator, dan sin/cos jam. Nilai sensor dinormalisasi memakai statistik periode
 training fold saja; nilai yang masih hilang setelah preprocessing diisi median
 training. Negatif di-*downsample* dengan helper yang sama (`neg_frac=0.25`).
-Untuk menjaga durasi, CNN memakai 3 fold pertama dan 3 epoch. Threshold tetap
+CNN memakai 5 fold dan 3 epoch. Threshold tetap
 ditentukan dari April kolam training, lalu hasil uji di Mei–Juni.
 Model ini baseline kecil (3 epoch), bukan hasil tuning arsitektur; metriknya
 dilaporkan apa adanya dan tidak dipakai untuk menggantikan model utama.

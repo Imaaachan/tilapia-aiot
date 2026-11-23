@@ -533,35 +533,35 @@
   },
   "sequence_cnn": {
     "architecture": "two-layer 1D CNN, 7 input channels, global average pooling",
-    "folds": 3,
+    "folds": 5,
     "sequence_hours": 72,
     "negative_sampling_fraction": 0.25,
     "results": {
       "6": {
-        "n_folds": 3,
-        "cnn_pr_auc_mean": 0.12851001588752084,
-        "cnn_pr_auc_sd": 0.04941488105736669,
-        "lgbm_matched_pr_auc_mean": 0.8060730588776699,
-        "cnn_event_recall_mean": 0.18314135972787923,
-        "lgbm_matched_event_recall_mean": 0.6969230259671436,
+        "n_folds": 5,
+        "cnn_pr_auc_mean": 0.10969220643699402,
+        "cnn_pr_auc_sd": 0.06283042317521693,
+        "lgbm_matched_pr_auc_mean": 0.8170540985582875,
+        "cnn_event_recall_mean": 0.2593019286567674,
+        "lgbm_matched_event_recall_mean": 0.7291428265692972,
         "cnn_epochs": 3
       },
       "12": {
-        "n_folds": 3,
-        "cnn_pr_auc_mean": 0.19893475330794455,
-        "cnn_pr_auc_sd": 0.05380216492460115,
-        "lgbm_matched_pr_auc_mean": 0.7137181831171361,
-        "cnn_event_recall_mean": 0.36489861489861486,
-        "lgbm_matched_event_recall_mean": 0.739750957854406,
+        "n_folds": 5,
+        "cnn_pr_auc_mean": 0.19427540812107652,
+        "cnn_pr_auc_sd": 0.12216413316875001,
+        "lgbm_matched_pr_auc_mean": 0.7273690880895649,
+        "cnn_event_recall_mean": 0.3734858732500131,
+        "lgbm_matched_event_recall_mean": 0.7949616858237547,
         "cnn_epochs": 3
       },
       "24": {
-        "n_folds": 3,
-        "cnn_pr_auc_mean": 0.26523509345681523,
-        "cnn_pr_auc_sd": 0.12339580230315841,
-        "lgbm_matched_pr_auc_mean": 0.6201892062706028,
-        "cnn_event_recall_mean": 0.41042433210686297,
-        "lgbm_matched_event_recall_mean": 0.6981392876129718,
+        "n_folds": 5,
+        "cnn_pr_auc_mean": 0.2904077336017509,
+        "cnn_pr_auc_sd": 0.07180971168906897,
+        "lgbm_matched_pr_auc_mean": 0.5405541409760585,
+        "cnn_event_recall_mean": 0.45505542675353994,
+        "lgbm_matched_event_recall_mean": 0.7448803827751196,
         "cnn_epochs": 3
       }
     }
