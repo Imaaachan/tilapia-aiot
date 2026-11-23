@@ -22,7 +22,7 @@ Lanjutan dari Bagian 1 (audit + digital twin). Isi notebook:
 
 code(r"""
 import os, sys, subprocess
-REPO_URL = "https://github.com/USERNAME/tilapia-aiot.git"   # ganti USERNAME setelah repo dibuat
+REPO_URL = "https://github.com/Imaaachan/tilapia-aiot.git"
 
 # cari root repo (folder yang berisi src/)
 ROOT = next((p for p in [".", "..", "tilapia-aiot"] if os.path.isdir(os.path.join(p, "src"))), None)

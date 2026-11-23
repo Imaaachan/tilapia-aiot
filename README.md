@@ -29,7 +29,7 @@ outputs/                        # hasil (figur, tabel, JSON); dataset sintetis t
 
 ## Cara menjalankan
 ```bash
-git clone https://github.com/USERNAME/tilapia-aiot.git
+git clone https://github.com/Imaaachan/tilapia-aiot.git
 cd tilapia-aiot
 pip install -r requirements.txt
 jupyter notebook notebooks/01_audit_digital_twin.ipynb   # lalu 02_features_models.ipynb
