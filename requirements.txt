@@ -8,3 +8,5 @@ lightgbm
 matplotlib
 pyarrow
 pytest
+shap
+torch
