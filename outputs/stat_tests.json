@@ -1,0 +1,21 @@
+{
+  "metric": "PR-AUC",
+  "paired_design": "5 folds x 3 horizons = 15 paired fold-horizon observations",
+  "wilcoxon_lgbm_vs_rf": {
+    "n_pairs": 15,
+    "statistic": 8.0,
+    "p_value": 0.00152587890625,
+    "median_paired_difference_lgbm_minus_other": 0.05428286391865389
+  },
+  "wilcoxon_lgbm_vs_logreg": {
+    "n_pairs": 15,
+    "statistic": 1.0,
+    "p_value": 0.0001220703125,
+    "median_paired_difference_lgbm_minus_other": 0.10300513321518046
+  },
+  "friedman_3_models": {
+    "n_blocks": 15,
+    "statistic": 17.73333333333332,
+    "p_value": 0.0001410118446271147
+  }
+}

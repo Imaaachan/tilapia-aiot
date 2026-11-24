@@ -335,6 +335,7 @@ ablation_summary = (
     .reset_index()
 )
 ablation_summary.to_csv(OUT / "ablation_sensor_summary.csv", index=False)
+ablation_summary.to_csv(OUT / "table_ablation.csv", index=False)
 ablation_summary.round(3)
 """
 )
@@ -364,6 +365,7 @@ for ax, metric, ylabel in (
     ax.legend(frameon=False)
 fig.suptitle("Ablation kelompok sensor — pond_time, 5 fold")
 fig.tight_layout()
+fig.savefig(OUT / "fig_ablation.png", dpi=160, bbox_inches="tight")
 fig.savefig(OUT / "fig_ablation_sensors.png", dpi=160, bbox_inches="tight")
 plt.close(fig)
 """
@@ -523,6 +525,7 @@ lgbm_matched = main_results[
 sequence_comparison = sequence_results.merge(
     lgbm_matched, on=["horizon", "fold"], validate="one_to_one"
 )
+sequence_comparison.to_csv(OUT / "results_sequence_model.csv", index=False)
 sequence_comparison.to_csv(OUT / "sequence_cnn_vs_lgbm.csv", index=False)
 sequence_comparison.groupby("horizon")[
     ["pr_auc", "lgbm_pr_auc", "event_recall", "lgbm_event_recall"]
@@ -568,6 +571,19 @@ stat_tests["friedman_3_models"] = {
     "statistic": float(friedman.statistic),
     "p_value": float(friedman.pvalue),
 }
+stat_tests_path = OUT / "stat_tests.json"
+stat_tests_path.write_text(
+    json.dumps(
+        {
+            "metric": "PR-AUC",
+            "paired_design": "5 folds x 3 horizons = 15 paired fold-horizon observations",
+            **stat_tests,
+        },
+        indent=2,
+        ensure_ascii=False,
+    ),
+    encoding="utf-8",
+)
 stat_tests
 """
 )
